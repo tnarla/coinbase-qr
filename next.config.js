@@ -1,6 +1,8 @@
+const withTM = require("next-transpile-modules")(["react-dvd-screensaver"]);
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-}
+};
 
-module.exports = nextConfig
+module.exports = withTM(nextConfig);
